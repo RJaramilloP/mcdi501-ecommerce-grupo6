@@ -1,0 +1,7 @@
+situacion,decision
+Valores faltantes (0 en las 12 variables),"No se imputa. Se documenta como insumo de S3, donde la imputación requerirá inducir faltantes de forma controlada."
+Filas duplicadas e ID repetidos (0),No se elimina ningún registro.
+Valores altos de Discount_offered (cola derecha hasta 65),Se conservan: no hay evidencia suficiente para clasificarlos como errores de captura. Se reporta la mediana junto a la media.
+Unidad de Discount_offered no documentada,"Se analiza en su escala original, sin interpretarla como porcentaje."
+"Momento de registro de descuento, llamadas y calificación desconocido","Se interpretan como asociaciones, no como causas; se declara el riesgo de que sean posteriores al resultado (fuga de información)."
+Campo ID,"Se excluye como variable explicativa, pero se usa como diagnóstico de la estructura del archivo (sección 2.6)."

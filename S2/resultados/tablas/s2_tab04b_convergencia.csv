@@ -1,0 +1,14 @@
+diagnostico,valor
+"P(sobre umbral), semilla 42",0.2946
+EE Monte Carlo de P(sobre umbral),0.004558627425004153
+P99 de la tasa del lote,0.6330100000000002
+EE Monte Carlo del P99 (bootstrap de lotes),0.000619599023037756
+Media final vs. teórico (EE Monte Carlo),0.2033937111730951
+Pendiente log-log del EE acumulado,-0.49410694561199336
+Geweke z (10 % inicial vs. 50 % final),2.404339258803112
+Geweke p,0.016201729633784575
+Rango de la media entre 5 semillas (pp),0.03209999999999047
+Rango de P(sobre umbral) entre 5 semillas,0.015600000000000003
+"Semillas con Geweke p < 0,05 (de 5)",1.0
+P(sobre umbral): mínimo entre 5 semillas,0.2859
+P(sobre umbral): máximo entre 5 semillas,0.3015

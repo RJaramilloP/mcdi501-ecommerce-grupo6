@@ -1,0 +1,8 @@
+destino,insumo_s1,uso_previsto
+S2 · Bootstrap de IC,"Medias de costo, peso y descuento; proporción fuera de plazo (Tabla 10)",Comparar IC percentil y BCa con los IC normales; el descuento (asimetría alta) y el peso (bimodal) son los casos donde se esperan discrepancias.
+S2 · Permutación,"Prueba 1 (Welch, peso) y Prueba 2 (χ², importancia)","Contrastar los valores p con ≥ 10.000 permutaciones, en el completo y en ID > corte."
+S2 · Estabilidad de correlaciones,ρ de Spearman de descuento y peso con el retraso (Tabla 5),IC bootstrap de ρ; evaluar si la asociación depende del bloque inicial.
+S2 · Monte Carlo,"p̂ fuera de plazo, medias y desviaciones por grupo (Tablas 7 y 10)",Simular escenarios de retraso con los parámetros estimados y su incertidumbre.
+S2 · Robustez,"Bloque ID ≤ corte y reglas de frontera (Tablas 8, 9 y 16)",Tratar el bloque como subpoblación influyente; reportar qué resultados sobreviven.
+S3 · Imputación,0 faltantes (sección 1.1),La imputación por regresión requerirá inducir faltantes de forma controlada (MCAR/MAR) y comparar estrategias contra el valor real conocido.
+S3 · Regresión logística,Descuento > 10 ⇒ 100 % fuera de plazo (Tabla 9),Anticipar separación casi perfecta: coeficientes y odds ratios inestables si se incluye el descuento sin tratamiento.

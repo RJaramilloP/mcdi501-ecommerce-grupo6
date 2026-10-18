@@ -1,0 +1,9 @@
+contraste,efecto,efecto_completo,p_completo,efecto_sensibilidad,p_sensibilidad,clasificacion
+Descuento (t de Welch),d de Cohen,0.8819444743664963,0.0,-0.020705716334590344,0.362849299694907,Sensible: cambia la decisión
+Peso (t de Welch),d de Cohen,-0.5688115618573466,1.9309302139796645e-180,-0.04210986542631725,0.06450674673296417,Sensible: cambia la decisión
+Costo (t de Welch),d de Cohen,-0.15040010791923944,1.0357279058128199e-14,0.06511295053728713,0.004223483101463953,Sensible: invierte el signo
+Llamadas (t de Welch),d de Cohen,-0.13713150055682602,2.597327763346131e-12,0.05690416692837456,0.01258715670484621,Sensible: invierte el signo
+Importancia (χ²),V de Cramér,0.03331976485724238,0.0022303831047450844,0.02678921272516672,0.059495972173592086,Sensible: cambia la decisión
+Medio de transporte (χ²),V de Cramér,0.008221387385031968,0.6895487627593786,0.010469687472376164,0.6498565408186081,No significativo en ambos
+Bloque de almacén (χ²),V de Cramér,0.009952093771923525,0.8959524278243698,0.014004317788632243,0.8191239739409804,No significativo en ambos
+Importancia alta vs. resto (z),Diferencia en puntos porcentuales,5.810660987612959,0.0004897629421520458,4.306978270449136,0.03613015561034784,Mantiene significancia y dirección

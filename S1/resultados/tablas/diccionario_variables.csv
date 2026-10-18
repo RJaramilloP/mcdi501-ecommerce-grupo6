@@ -1,0 +1,13 @@
+variable,descripcion,naturaleza,escala,uso,tipo_en_python,valores_distintos,faltantes,faltantes_porcentaje
+ID,Identificador del registro,Identificador nominal,Nominal,identificador,int64,10999,0,0.0
+Warehouse_block,Bloque de almacén,Cualitativa nominal,Nominal,explicativa,str,5,0,0.0
+Mode_of_Shipment,Medio de transporte,Cualitativa nominal,Nominal,explicativa,str,3,0,0.0
+Customer_care_calls,Número de llamadas a atención al cliente,Cuantitativa discreta,Razón,explicativa,int64,6,0,0.0
+Customer_rating,Calificación del cliente: de 1 a 5,Cualitativa ordinal,Ordinal,explicativa,int64,5,0,0.0
+Cost_of_the_Product,Costo del producto,Cuantitativa monetaria,Razón,explicativa,int64,215,0,0.0
+Prior_purchases,Número de compras previas,Cuantitativa discreta,Razón,explicativa,int64,8,0,0.0
+Product_importance,"Importancia del producto: baja, media o alta",Cualitativa ordinal,Ordinal,explicativa,str,3,0,0.0
+Gender,Género registrado,Cualitativa nominal,Nominal,explicativa,str,2,0,0.0
+Discount_offered,Descuento ofrecido; unidad pendiente de confirmar,Cuantitativa,Pendiente de confirmar,explicativa,int64,65,0,0.0
+Weight_in_gms,Peso del producto en gramos,"Cuantitativa continua, registrada en gramos enteros",Razón,explicativa,int64,4034,0,0.0
+Reached.on.Time_Y.N,1 = fuera de plazo; 0 = a tiempo,Cualitativa nominal binaria,Nominal,objetivo,int64,2,0,0.0

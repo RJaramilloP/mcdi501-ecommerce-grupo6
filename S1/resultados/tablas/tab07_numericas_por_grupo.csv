@@ -1,0 +1,16 @@
+variable,estadistico,A tiempo,Fuera de plazo
+Weight_in_gms,mean,4168.668394950406,3272.6401036111533
+Weight_in_gms,median,4674.0,3231.0
+Weight_in_gms,std,1573.9541784477765,1576.148391070557
+Discount_offered,mean,5.545987376014428,18.663720859363096
+Discount_offered,median,6.0,9.0
+Discount_offered,std,2.877726875047668,19.108796897150185
+Cost_of_the_Product,mean,214.49864743011722,207.28919701356088
+Cost_of_the_Product,median,222.0,209.0
+Cost_of_the_Product,std,47.75743150793955,48.054876154550996
+Customer_care_calls,mean,4.147655545536519,3.9914673167758647
+Customer_care_calls,median,4.0,4.0
+Customer_care_calls,std,1.1627714063095704,1.1225923927413266
+Prior_purchases,mean,3.670423805229937,3.4980953832088986
+Prior_purchases,median,3.0,3.0
+Prior_purchases,std,1.5254444417326765,1.5172846557755575

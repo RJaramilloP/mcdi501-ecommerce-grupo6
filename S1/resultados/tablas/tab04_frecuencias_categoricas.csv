@@ -1,0 +1,14 @@
+variable,categoria,frecuencia,porcentaje
+Warehouse_block,A,1833,16.665151377397947
+Warehouse_block,B,1833,16.665151377397947
+Warehouse_block,C,1833,16.665151377397947
+Warehouse_block,D,1834,16.674243113010274
+Warehouse_block,F,3666,33.330302754795895
+Mode_of_Shipment,Flight,1777,16.156014183107555
+Mode_of_Shipment,Road,1760,16.001454677697975
+Mode_of_Shipment,Ship,7462,67.84253113919448
+Product_importance,low,5297,48.1589235385035
+Product_importance,medium,4754,43.22211110100918
+Product_importance,high,948,8.618965360487318
+Gender,F,5545,50.41367397036094
+Gender,M,5454,49.58632602963906

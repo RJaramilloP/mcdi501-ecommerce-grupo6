@@ -1,0 +1,25 @@
+# Entornos y archivos de Python/Jupyter.
+.venv/
+.venv-incompleta/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Datos locales: conservar solo los marcadores de carpeta.
+datos/originales/*
+!datos/originales/.gitkeep
+datos/procesados/*
+!datos/procesados/.gitkeep
+datos/control/*
+!datos/control/.gitkeep
+
+# Credenciales, configuración personal y archivos temporales.
+.env
+.env.*
+!.env.example
+.vscode/
+*.log
+~$*
+Thumbs.db
+.DS_Store

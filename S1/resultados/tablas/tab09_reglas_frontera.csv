@@ -1,0 +1,5 @@
+condicion,n,pct_fuera_plazo
+Descuento > 10,2647,100.0
+Descuento ≤ 10,8352,46.88697318007663
+Peso 2.000-3.999 g,1790,99.88826815642457
+Peso fuera de 2.000-3.999 g,9209,51.85144966880226
