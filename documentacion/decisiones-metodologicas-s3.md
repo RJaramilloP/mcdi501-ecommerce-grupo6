@@ -18,6 +18,7 @@ Registro de las decisiones tomadas en `S3/notebooks/s3-ecommerce-modelamiento.ip
 | No usar el objetivo, las llamadas ni la calificación para imputar | Evita trasladar información del resultado, o posiblemente posterior al despacho, a los predictores del modelo. |
 | Regresiones ajustadas solo con los casos completos del entrenamiento; imputación encadenada para los envíos sin ambos valores | Sin fuga de información; los 75 + 41 envíos sin costo ni peso necesitan las dos regresiones (van Buuren y Groothuis-Oudshoorn, 2011). |
 | Comparar eliminación, mediana y regresión contra los valores verdaderos; regresión con residuo y PMM como sensibilidad | Los faltantes inducidos permiten medir el error de imputación; S2 recomendó métodos que conserven la forma del peso bimodal. |
+| PMM: predicciones redondeadas a 1e-4 y orden estable para elegir los 5 donantes | Muchos casos completos comparten predicción; con el orden por defecto de NumPy el desempate dependía de la CPU (x86 frente a ARM) y la fila PMM de la Tabla 3 cambiaba entre equipos. Así el resultado es idéntico en cualquier computador. |
 | Adoptar la imputación por regresión | Menor RMSE (peso: 1.311 g frente a 1.635 g de la mediana) y conserva los 7.864 envíos. Costos declarados: encogimiento de varianza, correlación costo-peso exagerada y pesos imputados en el hueco 2.000-3.999 g (43,6 % de los imputados). |
 
 ## Modelos (sección 2)
