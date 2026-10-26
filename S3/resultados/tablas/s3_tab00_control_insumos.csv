@@ -1,0 +1,4 @@
+control,resultado
+SHA-256 del CSV,"coincide con S1, S2 y F2"
+Máscara MCAR (datos/derivados/mascara_mcar.csv),idéntica a la rutina de F2: 1.320 valores por variable
+Partición 70/30 (datos/derivados/particion_70_30.csv),entrenamiento 5.504 · prueba 2.360 · tasas 0.4359 y 0.4360

@@ -1,10 +1,14 @@
-# Versiones con las que se ejecutaron los notebooks de S1 y S2 (Python 3.13).
+# Versiones con las que se ejecutaron los notebooks del proyecto (Python 3.13).
 # Cada notebook imprime estas versiones en su sección 0.
 numpy==2.5.3
 pandas==3.0.5
 scipy==1.18.1
 matplotlib==3.11.2
 jinja2==3.1.6
+
+# Modelamiento (Formativa 2 y Sumativa 3).
+statsmodels==0.15.0
+scikit-learn==1.9.1
 
 # Ejecución de notebooks en VS Code o Jupyter.
 ipykernel

@@ -1,0 +1,7 @@
+hallazgo_s2,evidencia,decision_f2
+Parámetros robustos,"Solo el costo medio (robusto); proporción, peso y descuento dependen del bloque",El costo entra como predictor numérico; el peso se resume por su mediana (bimodal).
+Correlaciones estables,"Ninguna: las 5 cambian, se atenúan o invierten su signo en ID > 3.135","Las variables se eligen por su evidencia dentro de ID > 3.135, no por la del conjunto completo."
+Señal exploratoria,"Importancia alta vs. resto: p = 0,0357, Holm 0,143","Predictor principal del modelo, interpretado como exploratorio."
+ρ de Spearman en ID > 3.135,"Costo 0,034 [0,012; 0,056]; peso −0,023 [−0,045; −0,0003]; descuento −0,010 [−0,032; 0,012]",Costo y peso excluyen el 0; el descuento no: se excluye.
+Dependencia según el orden del archivo,"Razón de EE con bloques de 50 a 500 envíos: 0,92-1,01 en ID > 3.135 (11,3 en el completo)",En ID > 3.135 no hay estructura por orden: una partición aleatoria estratificada es válida.
+Fuga de información (recomendación 3),"Momento de registro de llamadas y calificación desconocido (S1, Tabla 1)",Llamadas y calificación quedan fuera del modelo predictivo.

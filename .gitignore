@@ -5,6 +5,7 @@ venv/
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
+.jupyter/
 
 # Datos locales: conservar solo los marcadores de carpeta.
 datos/originales/*

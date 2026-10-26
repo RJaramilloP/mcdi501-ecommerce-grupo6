@@ -1,0 +1,5 @@
+hallazgo,valor_s1,implicancia_f2
+Correlaciones de Spearman con el retraso (Tabla 5),"Descuento 0,335; Peso −0,266; Compras previas −0,075; Costo −0,072; Llamadas −0,064; Calificación 0,013",Candidatas iniciales; se contrastan con su validación en S2 antes de usarlas.
+"Valores faltantes (Tabla 1, diccionario)",0 en las 12 variables,Se inducen faltantes MCAR controlados para ensayar su tratamiento (sección 1.3).
+Valores atípicos (regla IQR),"Descuento 2.209; compras previas 1.003; costo, peso y llamadas 0",S1 los conservó por no ser errores; en ID > 3.135 el descuento máximo es 10 y no tiene atípicos.
+Bloque inicial ID ≤ 3.135 (Tablas 8 y 9),"100 % fuera de plazo; descuento > 10 en 2.647 envíos, todos fuera de plazo",Separación casi perfecta en el completo: el modelo se ajusta en ID > 3.135.

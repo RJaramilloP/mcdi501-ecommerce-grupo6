@@ -1,0 +1,11 @@
+variable_a_imputar,predictor,rho_completo_S1,rho_id_gt_3135,estable,decision,motivo
+Costo,Peso,-0.13198020631648366,-0.3738159903808296,True,Usar,Correlación estable en ambos conjuntos
+Costo,Compras previas,0.19421616744207576,0.2304003016125396,True,Usar,Correlación estable en ambos conjuntos
+Costo,Descuento,-0.11581748351518943,0.006411719821606289,False,Excluir,Correlación débil o dependiente del bloque
+Costo,Llamadas,0.2936996864622091,0.34534034391760543,True,Excluir,"Posible fuga (S2, recomendación 3)"
+Costo,Calificación,0.010242343040219377,0.009691067104044541,False,Excluir,"Posible fuga (S2, recomendación 3)"
+Peso,Costo,-0.13198020631648366,-0.3738159903808296,True,Usar,Correlación estable en ambos conjuntos
+Peso,Compras previas,-0.2346734419316868,-0.372265584369213,True,Usar,Correlación estable en ambos conjuntos
+Peso,Descuento,-0.3156765462217137,0.0014331555510657733,False,Excluir,Correlación débil o dependiente del bloque
+Peso,Llamadas,-0.23293589755321256,-0.38257806116625126,True,Excluir,"Posible fuga (S2, recomendación 3)"
+Peso,Calificación,-0.004802636281810662,-0.01451227668536919,False,Excluir,"Posible fuga (S2, recomendación 3)"

@@ -1,0 +1,12 @@
+diagnostico,valor
+Distancia de Cook máxima,0.0012265461722612162
+Umbral 4/n,0.0007267441860465116
+Observaciones sobre el umbral,75.0
+Apalancamiento máximo (promedio = p/n),0.0038120598286003806
+Residuos de Pearson |r| > 2 (%),0.0
+Máximo cambio de coeficiente sin esas observaciones (en EE),1.947421421648268
+Influyentes de importancia alta (%),88.0
+Tasa de retraso de los influyentes,0.7866666666666666
+Importancia alta en el entrenamiento (%),8.175872093023257
+Hosmer-Lemeshow (estadístico),6.270994177748153
+Hosmer-Lemeshow (p),0.6169051314255193

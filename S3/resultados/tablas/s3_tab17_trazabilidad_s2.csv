@@ -1,0 +1,9 @@
+recomendacion_S2,aplicacion_S3,seccion
+1. Modelar en ID > 3.135; repetir en el completo; partición que respete el orden,"Modelos en ID > 3.135. En el completo, partición aleatoria (AUC 0,677) frente a partición por orden (0,501). En ID > 3.135, partición aleatoria justificada por el bootstrap por bloques (sin estructura por orden)","0.2, 2, 4.1"
+2. Descuento y separación casi perfecta (Firth),En ID > 3.135 no hay separación y no se usa Firth. El indicador del bloque no se incluye porque separa perfectamente,"2.2, 4.1"
+"3. Fuga de información (descuento, llamadas, calificación)","Llamadas y calificación excluidas como predictores y como variables de imputación; el descuento, ofrecido en la venta, queda como candidato","1.2, 2.1"
+4. Importancia alta como candidata exploratoria; potencia de 49 %,"Está en los tres modelos. OR > 1 en todos, sin significancia tras Holm, coherente con la potencia baja",2.2
+5. Imputar el peso sin supuesto normal (residuos empíricos o PMM),Regresión como estrategia principal; regresión con residuo empírico y PMM como sensibilidad. PMM conserva la bimodalidad,1.3
+6. Línea base de clase mayoritaria y métricas más allá de la accuracy,"Línea base de 56,4 % de accuracy; se informan recall, precision, F1, especificidad, AUC con IC y prueba de permutación",2.5
+7. Bootstrap BCa con B ≥ 10.000 para coeficientes,BCa y percentil con 10.000 remuestras y aceleración por jackknife; frecuencia de selección del stepwise en 1.000 remuestras,2.3
+8. Holm para varios predictores,p ajustados por Holm en los coeficientes de cada modelo,2.2

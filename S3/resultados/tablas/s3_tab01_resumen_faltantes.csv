@@ -1,0 +1,11 @@
+variable,conjunto,n,faltantes,pct_faltantes
+Cost_of_the_Product,Completo (10.999),10999,1320,12.001091008273479
+Cost_of_the_Product,ID > 3.135,7864,959,12.194811800610376
+Cost_of_the_Product,Entrenamiento,5504,641,11.64607558139535
+Cost_of_the_Product,Prueba,2360,318,13.474576271186441
+Weight_in_gms,Completo (10.999),10999,1320,12.001091008273479
+Weight_in_gms,ID > 3.135,7864,936,11.90233977619532
+Weight_in_gms,Entrenamiento,5504,647,11.755087209302326
+Weight_in_gms,Prueba,2360,289,12.245762711864407
+Ambas,Entrenamiento,5504,75,1.3626453488372092
+Ambas,Prueba,2360,41,1.7372881355932204

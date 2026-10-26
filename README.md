@@ -11,6 +11,39 @@ Este repositorio reúne las entregas del proyecto del curso. Cada sumativa tiene
 |---|---|---|---|
 | Sumativa 1 · Análisis exploratorio e inferencial | [`S1/`](S1/) | Informe, notebook y resultados (versión evaluada) | 14/10/2026 |
 | Sumativa 2 · Validación, simulación y remuestreo | [`S2/`](S2/) | Informe, notebook, resultados y **reporte de resultados validados** | 20/10/2026 |
+| Formativa 2 · Primer modelo de regresión logística | [`F2/`](F2/) | Notebook con faltantes MCAR, modelo logístico, diagnóstico y desempeño | 25/10/2026 |
+| Sumativa 3 · Modelamiento predictivo integrado | [`S3/`](S3/) | Informe final, notebook maestro, resultados | 28/10/2026 |
+
+## Sumativa 3
+
+| Entregable | Archivo |
+|---|---|
+| Informe final (PDF, máx. 10 páginas) | [`S3/informe-s3-ecommerce.pdf`](S3/informe-s3-ecommerce.pdf) |
+| Notebook maestro ejecutado | [`S3/notebooks/s3-ecommerce-modelamiento.ipynb`](S3/notebooks/s3-ecommerce-modelamiento.ipynb) |
+| Tablas y figuras citadas en el informe | [`S3/resultados/`](S3/resultados/) |
+| Bitácora de decisiones metodológicas | [`documentacion/decisiones-metodologicas-s3.md`](documentacion/decisiones-metodologicas-s3.md) |
+
+**Pregunta.** ¿Qué modelo usar para anticipar retrasos, qué tan estable es y qué cambia según cómo se traten los faltantes? Todo se ajusta en ID > 3.135 con la máscara MCAR y la partición 70/30 de F2.
+
+| Sección | Método |
+|---|---|
+| 1. Faltantes | Imputación por regresión lineal múltiple (predictores de la matriz de S1 estables en ID > 3.135, ajuste solo en entrenamiento, imputación encadenada); comparación de eliminación, mediana y regresión contra los valores verdaderos, con regresión + residuo y PMM como sensibilidad |
+| 2. Logística | Tres modelos (validado por S1/S2, stepwise por AIC, reducido), validación cruzada con regla de un error estándar, bootstrap de 10.000 remuestras (percentil y BCa) y frecuencia de selección del stepwise, VIF, Box-Tidwell, distancia de Cook, Hosmer-Lemeshow, métricas con ponderación de clases, AUC con IC bootstrap y prueba de permutación |
+| 3. Impacto | Modelo final ajustado con cada estrategia y con los valores verdaderos |
+| 4. Integración | Contraste en el archivo completo (partición aleatoria frente a orden por ID) y trazabilidad de las ocho recomendaciones de S2 |
+
+**Resultado principal.** El modelo final cumple los supuestos y está calibrado, pero no discrimina mejor que el azar (AUC de prueba 0,515 [0,492; 0,539]; permutación p = 0,104), y sus tres coeficientes son inestables. El mismo modelo alcanza un AUC de 0,677 con una partición aleatoria del archivo completo y de 0,501 cuando se evalúa en envíos posteriores: la capacidad predictiva aparente proviene del bloque inicial. La estrategia de faltantes no cambia las conclusiones (desvíos menores que un error estándar respecto de los valores verdaderos).
+
+## Formativa 2
+
+| Entregable | Archivo |
+|---|---|
+| Notebook ejecutado | [`F2/notebooks/f2-ecommerce-modelo-logistico.ipynb`](F2/notebooks/f2-ecommerce-modelo-logistico.ipynb) |
+| Tablas y figuras | [`F2/resultados/`](F2/resultados/) |
+| Máscara de faltantes MCAR y partición 70/30 (reutilizadas en S3) | [`datos/derivados/`](datos/derivados/) |
+| Bitácora de decisiones metodológicas | [`documentacion/decisiones-metodologicas-f2.md`](documentacion/decisiones-metodologicas-f2.md) |
+
+Ensayo del flujo de modelamiento de la Sumativa 3, ajustado en el subconjunto ID > 3.135 que S2 identificó como régimen sin el bloque inicial. Se eliminan al azar (MCAR) el 12 % de los valores de costo y peso, con semilla 42 y una sola vez: la máscara (solo ID y variable, sin valores) queda versionada en `datos/derivados/mascara_mcar.csv`. Los faltantes se imputan por la mediana del entrenamiento, se ajusta una logística con importancia alta, costo y peso (elegidas por su evidencia en S1 y S2), y se evalúa en el 30 % de prueba. Resultado: el modelo no discrimina mejor que el azar (AUC = 0,515 [0,491; 0,538]; prueba de permutación p = 0,107), coherente con la dependencia del bloque inicial documentada en S2.
 
 ## Sumativa 2
 
@@ -71,9 +104,12 @@ Se utiliza [E-Commerce Shipping Data](https://www.kaggle.com/datasets/prachi13/c
 ├── README.md
 ├── requirements.txt
 ├── datos/originales/             # CSV local (no versionado)
+├── datos/derivados/              # máscara MCAR y partición 70/30 (solo ID, versionadas)
 ├── documentacion/
 │   ├── decisiones-metodologicas-s1.md
-│   └── decisiones-metodologicas-s2.md
+│   ├── decisiones-metodologicas-s2.md
+│   ├── decisiones-metodologicas-f2.md
+│   └── decisiones-metodologicas-s3.md
 ├── S1/
 │   ├── informe-s1-ecommerce.pdf
 │   ├── notebooks/s1-ecommerce-analisis.ipynb
@@ -84,6 +120,13 @@ Se utiliza [E-Commerce Shipping Data](https://www.kaggle.com/datasets/prachi13/c
     ├── resultados/{tablas,figuras}/   # s2_tab*.csv, s2_fig*.png
     ├── resultados_validados.csv
     └── resultados_validados.md
+├── F2/
+│   ├── notebooks/f2-ecommerce-modelo-logistico.ipynb
+│   └── resultados/{tablas,figuras}/   # f2_tab*.csv, f2_fig*.png
+└── S3/
+    ├── informe-s3-ecommerce.pdf
+    ├── notebooks/s3-ecommerce-modelamiento.ipynb
+    └── resultados/{tablas,figuras}/   # s3_tab*.csv, s3_fig*.png
 ```
 
 ## Reproducción
@@ -98,7 +141,7 @@ python -m pip install -r requirements.txt
 
 Abrir el notebook en VS Code o Jupyter, seleccionar el entorno `.venv` y ejecutar todas las celdas (**Run All**). El notebook de S2 tarda entre 4 y 8 minutos (cientos de miles de remuestras, permutaciones e iteraciones). Usa la semilla 42 con un generador reiniciado en cada sección, por lo que reproduce exactamente las mismas tablas en cada ejecución; en otra máquina pueden variar los últimos decimales por diferencias de coma flotante, sin efecto sobre las cifras informadas.
 
-**Orden de ejecución:** S2 lee las tablas de `S1/resultados/tablas/`, que ya están en el repositorio. No es necesario volver a ejecutar S1; si se ejecuta, regenera esas tablas con los mismos valores.
+**Orden de ejecución:** S2 lee las tablas de `S1/resultados/tablas/`, y F2 lee las de S1 y S2, todas ya incluidas en el repositorio. No es necesario volver a ejecutar S1 ni S2; si se ejecutan, regeneran esas tablas con los mismos valores salvo diferencias de coma flotante en los últimos decimales. F2 tarda menos de un minuto y S3, unos 7 minutos (10.000 remuestras bootstrap con reajuste del modelo, jackknife y 1.000 selecciones stepwise). S3 lee la máscara y la partición de `datos/derivados/`, que crea F2: ejecutar F2 antes de S3 si esos archivos no existen.
 
 ## Limitaciones
 

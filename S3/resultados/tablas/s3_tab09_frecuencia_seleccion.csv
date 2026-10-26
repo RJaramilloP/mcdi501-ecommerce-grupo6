@@ -1,0 +1,9 @@
+variable,frecuencia_seleccion_pct,en_M2,en_M1
+Importancia,75.6,True,False
+Costo,73.5,True,True
+Descuento,52.4,True,False
+Género,49.9,False,False
+Peso,46.7,False,True
+Compras previas,32.2,False,False
+Medio de transporte,25.5,False,False
+Bloque de almacén,14.0,False,False

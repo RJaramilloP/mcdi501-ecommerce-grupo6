@@ -1,0 +1,4 @@
+conjunto,n,fuera_de_plazo,tasa_fuera_plazo,faltantes_costo,faltantes_peso,filas_completas
+ID > 3.135,7864,3428,0.43591047812817907,959,936,6085
+Entrenamiento,5504,2399,0.43586482558139533,641,647,4291
+Prueba,2360,1029,0.43601694915254235,318,289,1794

@@ -1,0 +1,11 @@
+variable,evidencia_s1,evidencia_s2_id_gt_3135,decision,motivo
+Importancia alta,"z: +5,81 pp, p = 0,0005","+4,31 pp, p perm. = 0,0357; señal exploratoria (Holm 0,143)",Incluir,Única señal que conserva dirección y magnitud en ambos conjuntos
+Costo,"ρ = −0,072","ρ = 0,034 [0,012; 0,056]; parámetro robusto",Incluir,IC excluye el 0 en ID > 3.135 (signo opuesto al completo); conocido antes del despacho
+Peso,"ρ = −0,266; Welch p < 0,0001","ρ = −0,023 [−0,045; −0,0003]; atenuada",Incluir,Conserva el signo de S1 y su IC excluye el 0 por poco; conocido antes del despacho
+Descuento,"ρ = 0,335; > 10 ⇒ 100 % retraso","ρ = −0,010 [−0,032; 0,012]",Excluir,Asociación nula sin el bloque
+Compras previas,"ρ = −0,075","ρ = 0,007 [−0,015; 0,030]",Excluir,Asociación nula sin el bloque
+Llamadas,"ρ = −0,064; paradoja de Simpson","ρ = 0,026 [0,004; 0,048]",Excluir,Posible registro posterior al despacho (fuga)
+Calificación,"ρ = 0,013",No evaluada (S1 sin señal),Excluir,Posterior a la entrega (fuga) y sin señal en S1
+Medio de transporte,"χ² p = 0,69; tasas 58,8-60,2 %",No evaluada (S1 sin señal),Excluir,Sin asociación en S1
+Bloque de almacén,"Tasas 58,6-60,2 %",No evaluada (S1 sin señal),Excluir,Sin asociación en S1
+Género,"Tasas 59,4-59,9 %",No evaluada (S1 sin señal),Excluir,Sin asociación en S1

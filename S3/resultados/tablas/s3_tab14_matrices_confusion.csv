@@ -1,0 +1,7 @@
+modelo,conjunto,VN,FP,FN,VP
+M1,entrenamiento,1773,1332,1268,1131
+M1,prueba,756,575,552,477
+M2,entrenamiento,1604,1501,1124,1275
+M2,prueba,664,667,494,535
+M3,entrenamiento,2867,238,2187,212
+M3,prueba,1237,94,940,89
